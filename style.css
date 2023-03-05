@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#7895B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #181D31;
+    letter-spacing: 5px;
+    margin: 5px 0;
+}
+
+.todo-list{
+    width: 450px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color:#F7F5EB;
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 2px;
+}
+.entered-list{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color:#0c5770;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+    margin: auto;
+    padding: 10px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+.add-list:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.tasks{
+    width: 100%;
+    margin-top: 2px;
+}
+
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    letter-spacing: 1px;
+
+}
+.item.completed p{
+    text-decoration: line-through;
+    color: #11111180;
+}
+.item-btn{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+.item-btn i {
+ 
+    font-size: 18px;
+    cursor: pointer;
+}
+
+p{
+    font-size: px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+}
+
+    
